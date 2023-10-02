@@ -1,35 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
-
-/**
- * @author adrianadewunmi
- * Admin Login Validation Servlet
- * for administrator login
- */
-
 import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 
-/**
- *
- * @author adrianadewunmi
- */
 public class ValidateAd extends HttpServlet {
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
+   
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // Fetch username and password
+             // Fetch username and password
         try (PrintWriter printWriterOut = response.getWriter()) {
             // Fetch username and password
             String userName = request.getParameter("Ausername");
