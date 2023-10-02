@@ -7,20 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/*
- * @author adrianadewunmi
- * 
- */
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author adrianadewunmi
- */
 public class LoginDao {
     
     public static boolean validate(String User_Name, String User_Password) throws SQLException{
