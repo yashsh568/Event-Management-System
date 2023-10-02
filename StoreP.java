@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
-
 import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -11,23 +6,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
-/**
- * @author adrianadewunmi
- * Servlet for adding participant username and password to database
- */
 public class StoreP extends HttpServlet {
-    
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+       protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
@@ -36,8 +16,6 @@ public class StoreP extends HttpServlet {
         String userName = request.getParameter("Pusername");
         String userPassword = request.getParameter("Ppassword");
         String confirmUserPassword = request.getParameter("Cpassword");
-        
-        // EventlyDB, name of table plogindetails
         
         String a1 = userName;
         String a2 = userPassword;
