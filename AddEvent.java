@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
-
 import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -11,22 +6,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/*
- * @author adrianadewunmi
- * Servlet for adding events to the database
- */
 
 public class AddEvent extends HttpServlet {
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
+   
+  
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        response.setContentType("text/html");
@@ -62,8 +46,7 @@ public class AddEvent extends HttpServlet {
                 RequestDispatcher requestDispatcher = request.getRequestDispatcher("CreateE.html");
                 requestDispatcher.include(request, response);
 
-//                out.println("<br><center><h3> Event Added</h3></center>");
-//                System.out.println("Added to the database!!!");
+
                 response.setContentType("text/html");  
                 out.println("<script type=\"text/javascript\">");  
                 out.println("alert('Success! ... Event Details Added To Database!');");  
